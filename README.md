@@ -4,12 +4,12 @@ Meds Genie iOS app
 
 App configuration:
 
-* create file `PillOMat/config.h`
+* create file `MedsGenie/config.h`
 
 
 ```
-#ifndef PillOMat_config_h
-#define PillOMat_config_h
+#ifndef MedsGenie_config_h
+#define MedsGenie_config_h
 
 #define PAYPALSECRET @"<Your paypal secret>"
 #define API_SECRET @"<Sparkcore api secret>"
