@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E7B918A19713F2B00174EB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E7B918919713F2B00174EB7 /* Foundation.framework */; };
+		0E7B918C19713F2B00174EB7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E7B918B19713F2B00174EB7 /* CoreGraphics.framework */; };
+		0E7B918E19713F2B00174EB7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E7B918D19713F2B00174EB7 /* UIKit.framework */; };
+		0E7B919419713F2B00174EB7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0E7B919219713F2B00174EB7 /* InfoPlist.strings */; };
+		0E7B919619713F2B00174EB7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B919519713F2B00174EB7 /* main.m */; };
+		0E7B919A19713F2B00174EB7 /* ORAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B919919713F2B00174EB7 /* ORAppDelegate.m */; };
+		0E7B919D19713F2C00174EB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E7B919B19713F2C00174EB7 /* Main.storyboard */; };
+		0E7B91A019713F2C00174EB7 /* ORViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B919F19713F2C00174EB7 /* ORViewController.m */; };
+		0E7B91A219713F2C00174EB7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E7B91A119713F2C00174EB7 /* Images.xcassets */; };
+		0E7B91A919713F2C00174EB7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E7B91A819713F2C00174EB7 /* XCTest.framework */; };
+		0E7B91AA19713F2C00174EB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E7B918919713F2B00174EB7 /* Foundation.framework */; };
+		0E7B91AB19713F2C00174EB7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E7B918D19713F2B00174EB7 /* UIKit.framework */; };
+		0E7B91B319713F2C00174EB7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0E7B91B119713F2C00174EB7 /* InfoPlist.strings */; };
+		0E7B91B519713F2C00174EB7 /* PillOMatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B91B419713F2C00174EB7 /* PillOMatTests.m */; };
+		0E7B91C01971648300174EB7 /* ScheduleDatasoure.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B91BF1971648300174EB7 /* ScheduleDatasoure.m */; };
+		0E7B91C3197164B100174EB7 /* ScheduleItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B91C2197164B100174EB7 /* ScheduleItem.m */; };
+		0E7B91C6197164E300174EB7 /* ScheduleItemDose.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B91C5197164E300174EB7 /* ScheduleItemDose.m */; };
+		0E7B91C9197164F200174EB7 /* Tray.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B91C8197164F200174EB7 /* Tray.m */; };
+		0E7B91CC1971677A00174EB7 /* StorageDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B91CB1971677A00174EB7 /* StorageDatasource.m */; };
+		0E7B91CF197167AB00174EB7 /* StorageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B91CE197167AB00174EB7 /* StorageItem.m */; };
+		0E7B91D319716A8D00174EB7 /* StorageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B91D219716A8D00174EB7 /* StorageViewController.m */; };
+		0E7B91D6197177C500174EB7 /* StorageItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B91D5197177C500174EB7 /* StorageItemViewController.m */; };
+		0E7B91D91971829200174EB7 /* SchedulerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B91D81971829200174EB7 /* SchedulerViewController.m */; };
+		0E7B91DC197185E600174EB7 /* SchedulerItemTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B91DB197185E600174EB7 /* SchedulerItemTableViewController.m */; };
+		0E7B91E019719FB900174EB7 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B91DF19719FB900174EB7 /* APIManager.m */; };
+		0E7B91E31971B37900174EB7 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B91E21971B37900174EB7 /* WelcomeViewController.m */; };
+		0E7B91E61971C8D800174EB7 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B91E51971C8D800174EB7 /* HomeViewController.m */; };
+		0E7B91E91971CB9B00174EB7 /* UIView+TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B91E81971CB9B00174EB7 /* UIView+TableViewCell.m */; };
+		2AEBEE6343C745F78C24A418 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C7786F291F4C2081F07CC8 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0E7B91AC19713F2C00174EB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E7B917E19713F2B00174EB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E7B918519713F2B00174EB7;
+			remoteInfo = PillOMat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E7B918619713F2B00174EB7 /* PillOMat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PillOMat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E7B918919713F2B00174EB7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0E7B918B19713F2B00174EB7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0E7B918D19713F2B00174EB7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0E7B919119713F2B00174EB7 /* PillOMat-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PillOMat-Info.plist"; sourceTree = "<group>"; };
+		0E7B919319713F2B00174EB7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0E7B919519713F2B00174EB7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0E7B919719713F2B00174EB7 /* PillOMat-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PillOMat-Prefix.pch"; sourceTree = "<group>"; };
+		0E7B919819713F2B00174EB7 /* ORAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ORAppDelegate.h; sourceTree = "<group>"; };
+		0E7B919919713F2B00174EB7 /* ORAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORAppDelegate.m; sourceTree = "<group>"; };
+		0E7B919C19713F2C00174EB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0E7B919E19713F2C00174EB7 /* ORViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ORViewController.h; sourceTree = "<group>"; };
+		0E7B919F19713F2C00174EB7 /* ORViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORViewController.m; sourceTree = "<group>"; };
+		0E7B91A119713F2C00174EB7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0E7B91A719713F2C00174EB7 /* PillOMatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PillOMatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E7B91A819713F2C00174EB7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0E7B91B019713F2C00174EB7 /* PillOMatTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PillOMatTests-Info.plist"; sourceTree = "<group>"; };
+		0E7B91B219713F2C00174EB7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0E7B91B419713F2C00174EB7 /* PillOMatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PillOMatTests.m; sourceTree = "<group>"; };
+		0E7B91BE1971648300174EB7 /* ScheduleDatasoure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleDatasoure.h; sourceTree = "<group>"; };
+		0E7B91BF1971648300174EB7 /* ScheduleDatasoure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleDatasoure.m; sourceTree = "<group>"; };
+		0E7B91C1197164B100174EB7 /* ScheduleItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleItem.h; sourceTree = "<group>"; };
+		0E7B91C2197164B100174EB7 /* ScheduleItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleItem.m; sourceTree = "<group>"; };
+		0E7B91C4197164E300174EB7 /* ScheduleItemDose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleItemDose.h; sourceTree = "<group>"; };
+		0E7B91C5197164E300174EB7 /* ScheduleItemDose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleItemDose.m; sourceTree = "<group>"; };
+		0E7B91C7197164F200174EB7 /* Tray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tray.h; sourceTree = "<group>"; };
+		0E7B91C8197164F200174EB7 /* Tray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tray.m; sourceTree = "<group>"; };
+		0E7B91CA1971677A00174EB7 /* StorageDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageDatasource.h; sourceTree = "<group>"; };
+		0E7B91CB1971677A00174EB7 /* StorageDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageDatasource.m; sourceTree = "<group>"; };
+		0E7B91CD197167AB00174EB7 /* StorageItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageItem.h; sourceTree = "<group>"; };
+		0E7B91CE197167AB00174EB7 /* StorageItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageItem.m; sourceTree = "<group>"; };
+		0E7B91D119716A8D00174EB7 /* StorageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageViewController.h; sourceTree = "<group>"; };
+		0E7B91D219716A8D00174EB7 /* StorageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageViewController.m; sourceTree = "<group>"; };
+		0E7B91D4197177C500174EB7 /* StorageItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageItemViewController.h; sourceTree = "<group>"; };
+		0E7B91D5197177C500174EB7 /* StorageItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageItemViewController.m; sourceTree = "<group>"; };
+		0E7B91D71971829200174EB7 /* SchedulerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchedulerViewController.h; sourceTree = "<group>"; };
+		0E7B91D81971829200174EB7 /* SchedulerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchedulerViewController.m; sourceTree = "<group>"; };
+		0E7B91DA197185E600174EB7 /* SchedulerItemTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchedulerItemTableViewController.h; sourceTree = "<group>"; };
+		0E7B91DB197185E600174EB7 /* SchedulerItemTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchedulerItemTableViewController.m; sourceTree = "<group>"; };
+		0E7B91DE19719FB900174EB7 /* APIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
+		0E7B91DF19719FB900174EB7 /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
+		0E7B91E11971B37900174EB7 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		0E7B91E21971B37900174EB7 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		0E7B91E41971C8D800174EB7 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		0E7B91E51971C8D800174EB7 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		0E7B91E71971CB9B00174EB7 /* UIView+TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TableViewCell.h"; sourceTree = "<group>"; };
+		0E7B91E81971CB9B00174EB7 /* UIView+TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TableViewCell.m"; sourceTree = "<group>"; };
+		A5C7786F291F4C2081F07CC8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7DFDCBE9DAE46D1940F6395 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E7B918319713F2B00174EB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E7B918C19713F2B00174EB7 /* CoreGraphics.framework in Frameworks */,
+				0E7B918E19713F2B00174EB7 /* UIKit.framework in Frameworks */,
+				0E7B918A19713F2B00174EB7 /* Foundation.framework in Frameworks */,
+				2AEBEE6343C745F78C24A418 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E7B91A419713F2C00174EB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E7B91A919713F2C00174EB7 /* XCTest.framework in Frameworks */,
+				0E7B91AB19713F2C00174EB7 /* UIKit.framework in Frameworks */,
+				0E7B91AA19713F2C00174EB7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E7B917D19713F2B00174EB7 = {
+			isa = PBXGroup;
+			children = (
+				0E7B918F19713F2B00174EB7 /* PillOMat */,
+				0E7B91AE19713F2C00174EB7 /* PillOMatTests */,
+				0E7B918819713F2B00174EB7 /* Frameworks */,
+				0E7B918719713F2B00174EB7 /* Products */,
+				F7DFDCBE9DAE46D1940F6395 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		0E7B918719713F2B00174EB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E7B918619713F2B00174EB7 /* PillOMat.app */,
+				0E7B91A719713F2C00174EB7 /* PillOMatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0E7B918819713F2B00174EB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E7B918919713F2B00174EB7 /* Foundation.framework */,
+				0E7B918B19713F2B00174EB7 /* CoreGraphics.framework */,
+				0E7B918D19713F2B00174EB7 /* UIKit.framework */,
+				0E7B91A819713F2C00174EB7 /* XCTest.framework */,
+				A5C7786F291F4C2081F07CC8 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0E7B918F19713F2B00174EB7 /* PillOMat */ = {
+			isa = PBXGroup;
+			children = (
+				0E7B91E71971CB9B00174EB7 /* UIView+TableViewCell.h */,
+				0E7B91E81971CB9B00174EB7 /* UIView+TableViewCell.m */,
+				0E7B91DD19719F9F00174EB7 /* API */,
+				0E7B919819713F2B00174EB7 /* ORAppDelegate.h */,
+				0E7B919919713F2B00174EB7 /* ORAppDelegate.m */,
+				0E7B919B19713F2C00174EB7 /* Main.storyboard */,
+				0E7B919E19713F2C00174EB7 /* ORViewController.h */,
+				0E7B919F19713F2C00174EB7 /* ORViewController.m */,
+				0E7B91A119713F2C00174EB7 /* Images.xcassets */,
+				0E7B919019713F2B00174EB7 /* Supporting Files */,
+				0E7B91BE1971648300174EB7 /* ScheduleDatasoure.h */,
+				0E7B91BF1971648300174EB7 /* ScheduleDatasoure.m */,
+				0E7B91D019716A4800174EB7 /* Model */,
+				0E7B91CA1971677A00174EB7 /* StorageDatasource.h */,
+				0E7B91CB1971677A00174EB7 /* StorageDatasource.m */,
+				0E7B91D119716A8D00174EB7 /* StorageViewController.h */,
+				0E7B91D219716A8D00174EB7 /* StorageViewController.m */,
+				0E7B91D4197177C500174EB7 /* StorageItemViewController.h */,
+				0E7B91D5197177C500174EB7 /* StorageItemViewController.m */,
+				0E7B91D71971829200174EB7 /* SchedulerViewController.h */,
+				0E7B91D81971829200174EB7 /* SchedulerViewController.m */,
+				0E7B91DA197185E600174EB7 /* SchedulerItemTableViewController.h */,
+				0E7B91DB197185E600174EB7 /* SchedulerItemTableViewController.m */,
+				0E7B91E11971B37900174EB7 /* WelcomeViewController.h */,
+				0E7B91E21971B37900174EB7 /* WelcomeViewController.m */,
+				0E7B91E41971C8D800174EB7 /* HomeViewController.h */,
+				0E7B91E51971C8D800174EB7 /* HomeViewController.m */,
+			);
+			path = PillOMat;
+			sourceTree = "<group>";
+		};
+		0E7B919019713F2B00174EB7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E7B919119713F2B00174EB7 /* PillOMat-Info.plist */,
+				0E7B919219713F2B00174EB7 /* InfoPlist.strings */,
+				0E7B919519713F2B00174EB7 /* main.m */,
+				0E7B919719713F2B00174EB7 /* PillOMat-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0E7B91AE19713F2C00174EB7 /* PillOMatTests */ = {
+			isa = PBXGroup;
+			children = (
+				0E7B91B419713F2C00174EB7 /* PillOMatTests.m */,
+				0E7B91AF19713F2C00174EB7 /* Supporting Files */,
+			);
+			path = PillOMatTests;
+			sourceTree = "<group>";
+		};
+		0E7B91AF19713F2C00174EB7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E7B91B019713F2C00174EB7 /* PillOMatTests-Info.plist */,
+				0E7B91B119713F2C00174EB7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0E7B91D019716A4800174EB7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0E7B91C1197164B100174EB7 /* ScheduleItem.h */,
+				0E7B91C2197164B100174EB7 /* ScheduleItem.m */,
+				0E7B91C4197164E300174EB7 /* ScheduleItemDose.h */,
+				0E7B91C5197164E300174EB7 /* ScheduleItemDose.m */,
+				0E7B91C7197164F200174EB7 /* Tray.h */,
+				0E7B91C8197164F200174EB7 /* Tray.m */,
+				0E7B91CD197167AB00174EB7 /* StorageItem.h */,
+				0E7B91CE197167AB00174EB7 /* StorageItem.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0E7B91DD19719F9F00174EB7 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0E7B91DE19719FB900174EB7 /* APIManager.h */,
+				0E7B91DF19719FB900174EB7 /* APIManager.m */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0E7B918519713F2B00174EB7 /* PillOMat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E7B91B819713F2C00174EB7 /* Build configuration list for PBXNativeTarget "PillOMat" */;
+			buildPhases = (
+				F543E58441C54B56B07F6A46 /* Check Pods Manifest.lock */,
+				0E7B918219713F2B00174EB7 /* Sources */,
+				0E7B918319713F2B00174EB7 /* Frameworks */,
+				0E7B918419713F2B00174EB7 /* Resources */,
+				A95AE5BE28884A5EA1104EC3 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PillOMat;
+			productName = PillOMat;
+			productReference = 0E7B918619713F2B00174EB7 /* PillOMat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0E7B91A619713F2C00174EB7 /* PillOMatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E7B91BB19713F2C00174EB7 /* Build configuration list for PBXNativeTarget "PillOMatTests" */;
+			buildPhases = (
+				0E7B91A319713F2C00174EB7 /* Sources */,
+				0E7B91A419713F2C00174EB7 /* Frameworks */,
+				0E7B91A519713F2C00174EB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E7B91AD19713F2C00174EB7 /* PBXTargetDependency */,
+			);
+			name = PillOMatTests;
+			productName = PillOMatTests;
+			productReference = 0E7B91A719713F2C00174EB7 /* PillOMatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0E7B917E19713F2B00174EB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = OR;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Orta Systems";
+				TargetAttributes = {
+					0E7B91A619713F2C00174EB7 = {
+						TestTargetID = 0E7B918519713F2B00174EB7;
+					};
+				};
+			};
+			buildConfigurationList = 0E7B918119713F2B00174EB7 /* Build configuration list for PBXProject "PillOMat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0E7B917D19713F2B00174EB7;
+			productRefGroup = 0E7B918719713F2B00174EB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0E7B918519713F2B00174EB7 /* PillOMat */,
+				0E7B91A619713F2C00174EB7 /* PillOMatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0E7B918419713F2B00174EB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E7B91A219713F2C00174EB7 /* Images.xcassets in Resources */,
+				0E7B919419713F2B00174EB7 /* InfoPlist.strings in Resources */,
+				0E7B919D19713F2C00174EB7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E7B91A519713F2C00174EB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E7B91B319713F2C00174EB7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A95AE5BE28884A5EA1104EC3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F543E58441C54B56B07F6A46 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E7B918219713F2B00174EB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E7B919619713F2B00174EB7 /* main.m in Sources */,
+				0E7B919A19713F2B00174EB7 /* ORAppDelegate.m in Sources */,
+				0E7B91D91971829200174EB7 /* SchedulerViewController.m in Sources */,
+				0E7B91A019713F2C00174EB7 /* ORViewController.m in Sources */,
+				0E7B91E019719FB900174EB7 /* APIManager.m in Sources */,
+				0E7B91E31971B37900174EB7 /* WelcomeViewController.m in Sources */,
+				0E7B91C3197164B100174EB7 /* ScheduleItem.m in Sources */,
+				0E7B91E61971C8D800174EB7 /* HomeViewController.m in Sources */,
+				0E7B91C6197164E300174EB7 /* ScheduleItemDose.m in Sources */,
+				0E7B91DC197185E600174EB7 /* SchedulerItemTableViewController.m in Sources */,
+				0E7B91CF197167AB00174EB7 /* StorageItem.m in Sources */,
+				0E7B91E91971CB9B00174EB7 /* UIView+TableViewCell.m in Sources */,
+				0E7B91D6197177C500174EB7 /* StorageItemViewController.m in Sources */,
+				0E7B91C01971648300174EB7 /* ScheduleDatasoure.m in Sources */,
+				0E7B91CC1971677A00174EB7 /* StorageDatasource.m in Sources */,
+				0E7B91D319716A8D00174EB7 /* StorageViewController.m in Sources */,
+				0E7B91C9197164F200174EB7 /* Tray.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E7B91A319713F2C00174EB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E7B91B519713F2C00174EB7 /* PillOMatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0E7B91AD19713F2C00174EB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E7B918519713F2B00174EB7 /* PillOMat */;
+			targetProxy = 0E7B91AC19713F2C00174EB7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0E7B919219713F2B00174EB7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E7B919319713F2B00174EB7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0E7B919B19713F2C00174EB7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E7B919C19713F2C00174EB7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0E7B91B119713F2C00174EB7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E7B91B219713F2C00174EB7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0E7B91B619713F2C00174EB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0E7B91B719713F2C00174EB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0E7B91B919713F2C00174EB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7DFDCBE9DAE46D1940F6395 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PillOMat/PillOMat-Prefix.pch";
+				INFOPLIST_FILE = "PillOMat/PillOMat-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0E7B91BA19713F2C00174EB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7DFDCBE9DAE46D1940F6395 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PillOMat/PillOMat-Prefix.pch";
+				INFOPLIST_FILE = "PillOMat/PillOMat-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0E7B91BC19713F2C00174EB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PillOMat.app/PillOMat";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PillOMat/PillOMat-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PillOMatTests/PillOMatTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0E7B91BD19713F2C00174EB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PillOMat.app/PillOMat";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PillOMat/PillOMat-Prefix.pch";
+				INFOPLIST_FILE = "PillOMatTests/PillOMatTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E7B918119713F2B00174EB7 /* Build configuration list for PBXProject "PillOMat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E7B91B619713F2C00174EB7 /* Debug */,
+				0E7B91B719713F2C00174EB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E7B91B819713F2C00174EB7 /* Build configuration list for PBXNativeTarget "PillOMat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E7B91B919713F2C00174EB7 /* Debug */,
+				0E7B91BA19713F2C00174EB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E7B91BB19713F2C00174EB7 /* Build configuration list for PBXNativeTarget "PillOMatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E7B91BC19713F2C00174EB7 /* Debug */,
+				0E7B91BD19713F2C00174EB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0E7B917E19713F2B00174EB7 /* Project object */;
+}
