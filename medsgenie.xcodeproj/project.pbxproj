@@ -20,7 +20,7 @@
 		0E7B91AA19713F2C00174EB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E7B918919713F2B00174EB7 /* Foundation.framework */; };
 		0E7B91AB19713F2C00174EB7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E7B918D19713F2B00174EB7 /* UIKit.framework */; };
 		0E7B91B319713F2C00174EB7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0E7B91B119713F2C00174EB7 /* InfoPlist.strings */; };
-		0E7B91B519713F2C00174EB7 /* PillOMatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B91B419713F2C00174EB7 /* PillOMatTests.m */; };
+		0E7B91B519713F2C00174EB7 /* MedsGenieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B91B419713F2C00174EB7 /* MedsGenieTests.m */; };
 		0E7B91C01971648300174EB7 /* ScheduleDatasoure.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B91BF1971648300174EB7 /* ScheduleDatasoure.m */; };
 		0E7B91C3197164B100174EB7 /* ScheduleItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B91C2197164B100174EB7 /* ScheduleItem.m */; };
 		0E7B91C6197164E300174EB7 /* ScheduleItemDose.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B91C5197164E300174EB7 /* ScheduleItemDose.m */; };
@@ -67,7 +67,7 @@
 		0E7B91A819713F2C00174EB7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		0E7B91B019713F2C00174EB7 /* medsgenieTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "medsgenieTests-Info.plist"; sourceTree = "<group>"; };
 		0E7B91B219713F2C00174EB7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0E7B91B419713F2C00174EB7 /* PillOMatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PillOMatTests.m; sourceTree = "<group>"; };
+		0E7B91B419713F2C00174EB7 /* MedsGenieTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MedsGenieTests.m; sourceTree = "<group>"; };
 		0E7B91BE1971648300174EB7 /* ScheduleDatasoure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleDatasoure.h; sourceTree = "<group>"; };
 		0E7B91BF1971648300174EB7 /* ScheduleDatasoure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleDatasoure.m; sourceTree = "<group>"; };
 		0E7B91C1197164B100174EB7 /* ScheduleItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleItem.h; sourceTree = "<group>"; };
@@ -190,7 +190,6 @@
 				0E7B91E41971C8D800174EB7 /* HomeViewController.h */,
 				0E7B91E51971C8D800174EB7 /* HomeViewController.m */,
 			);
-			name = MedsGenie;
 			path = MedsGenie;
 			sourceTree = "<group>";
 		};
@@ -208,7 +207,7 @@
 		0E7B91AE19713F2C00174EB7 /* MedsGenieTests */ = {
 			isa = PBXGroup;
 			children = (
-				0E7B91B419713F2C00174EB7 /* PillOMatTests.m */,
+				0E7B91B419713F2C00174EB7 /* MedsGenieTests.m */,
 				0E7B91AF19713F2C00174EB7 /* Supporting Files */,
 			);
 			name = MedsGenieTests;
@@ -405,7 +404,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E7B91B519713F2C00174EB7 /* PillOMatTests.m in Sources */,
+				0E7B91B519713F2C00174EB7 /* MedsGenieTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,19 +547,19 @@
 		0E7B91BC19713F2C00174EB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PillOMat.app/PillOMat";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MedsGenie.app/MedsGenie";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PillOMat/PillOMat-Prefix.pch";
+				GCC_PREFIX_HEADER = "MedsGenie/MedsGenie-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "PillOMatTests/medsgenieTests-Info.plist";
+				INFOPLIST_FILE = "MedsGenieTests/medsgenieTests-Info.plist";
 				PRODUCT_NAME = medsgenieTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -570,15 +569,15 @@
 		0E7B91BD19713F2C00174EB7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PillOMat.app/PillOMat";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MedsGenie.app/MedsGenie";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PillOMat/PillOMat-Prefix.pch";
-				INFOPLIST_FILE = "PillOMatTests/medsgenieTests-Info.plist";
+				GCC_PREFIX_HEADER = "MedsGenie/MedsGenie-Prefix.pch";
+				INFOPLIST_FILE = "MedsGenieTests/medsgenieTests-Info.plist";
 				PRODUCT_NAME = medsgenieTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
