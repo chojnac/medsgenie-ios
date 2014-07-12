@@ -13,7 +13,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [PayPalMobile initializeWithClientIdsForEnvironments:@{PayPalEnvironmentSandbox : @"AQxHaBAYH1XcOIWxS1lJ_C0UWIBBQZym2N7DK053iTI4MdDOC2t5Grb5hji1"}];
+    [PayPalMobile initializeWithClientIdsForEnvironments:@{PayPalEnvironmentSandbox : PAYPALSECRET}];
     return YES;
 }
 							

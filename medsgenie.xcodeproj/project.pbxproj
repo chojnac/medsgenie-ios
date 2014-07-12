@@ -49,23 +49,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E7B918619713F2B00174EB7 /* PillOMat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PillOMat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E7B918619713F2B00174EB7 /* medsgenie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = medsgenie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E7B918919713F2B00174EB7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0E7B918B19713F2B00174EB7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		0E7B918D19713F2B00174EB7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		0E7B919119713F2B00174EB7 /* PillOMat-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PillOMat-Info.plist"; sourceTree = "<group>"; };
+		0E7B919119713F2B00174EB7 /* medsgenie-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "medsgenie-Info.plist"; sourceTree = "<group>"; };
 		0E7B919319713F2B00174EB7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0E7B919519713F2B00174EB7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0E7B919719713F2B00174EB7 /* PillOMat-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PillOMat-Prefix.pch"; sourceTree = "<group>"; };
+		0E7B919719713F2B00174EB7 /* medsgenie-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "medsgenie-Prefix.pch"; sourceTree = "<group>"; };
 		0E7B919819713F2B00174EB7 /* ORAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ORAppDelegate.h; sourceTree = "<group>"; };
 		0E7B919919713F2B00174EB7 /* ORAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORAppDelegate.m; sourceTree = "<group>"; };
 		0E7B919C19713F2C00174EB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E7B919E19713F2C00174EB7 /* ORViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ORViewController.h; sourceTree = "<group>"; };
 		0E7B919F19713F2C00174EB7 /* ORViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORViewController.m; sourceTree = "<group>"; };
 		0E7B91A119713F2C00174EB7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		0E7B91A719713F2C00174EB7 /* PillOMatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PillOMatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E7B91A719713F2C00174EB7 /* medsgenieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = medsgenieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E7B91A819713F2C00174EB7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		0E7B91B019713F2C00174EB7 /* PillOMatTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PillOMatTests-Info.plist"; sourceTree = "<group>"; };
+		0E7B91B019713F2C00174EB7 /* medsgenieTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "medsgenieTests-Info.plist"; sourceTree = "<group>"; };
 		0E7B91B219713F2C00174EB7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0E7B91B419713F2C00174EB7 /* PillOMatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PillOMatTests.m; sourceTree = "<group>"; };
 		0E7B91BE1971648300174EB7 /* ScheduleDatasoure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleDatasoure.h; sourceTree = "<group>"; };
@@ -96,6 +96,7 @@
 		0E7B91E51971C8D800174EB7 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		0E7B91E71971CB9B00174EB7 /* UIView+TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TableViewCell.h"; sourceTree = "<group>"; };
 		0E7B91E81971CB9B00174EB7 /* UIView+TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TableViewCell.m"; sourceTree = "<group>"; };
+		0E7B91EA1971D57300174EB7 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		A5C7786F291F4C2081F07CC8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DFDCBE9DAE46D1940F6395 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,8 +129,8 @@
 		0E7B917D19713F2B00174EB7 = {
 			isa = PBXGroup;
 			children = (
-				0E7B918F19713F2B00174EB7 /* PillOMat */,
-				0E7B91AE19713F2C00174EB7 /* PillOMatTests */,
+				0E7B918F19713F2B00174EB7 /* MedsGenie */,
+				0E7B91AE19713F2C00174EB7 /* MedsGenieTests */,
 				0E7B918819713F2B00174EB7 /* Frameworks */,
 				0E7B918719713F2B00174EB7 /* Products */,
 				F7DFDCBE9DAE46D1940F6395 /* Pods.xcconfig */,
@@ -139,8 +140,8 @@
 		0E7B918719713F2B00174EB7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0E7B918619713F2B00174EB7 /* PillOMat.app */,
-				0E7B91A719713F2C00174EB7 /* PillOMatTests.xctest */,
+				0E7B918619713F2B00174EB7 /* medsgenie.app */,
+				0E7B91A719713F2C00174EB7 /* medsgenieTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,10 +158,11 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0E7B918F19713F2B00174EB7 /* PillOMat */ = {
+		0E7B918F19713F2B00174EB7 /* MedsGenie */ = {
 			isa = PBXGroup;
 			children = (
 				0E7B91E71971CB9B00174EB7 /* UIView+TableViewCell.h */,
+				0E7B91EA1971D57300174EB7 /* config.h */,
 				0E7B91E81971CB9B00174EB7 /* UIView+TableViewCell.m */,
 				0E7B91DD19719F9F00174EB7 /* API */,
 				0E7B919819713F2B00174EB7 /* ORAppDelegate.h */,
@@ -188,33 +190,35 @@
 				0E7B91E41971C8D800174EB7 /* HomeViewController.h */,
 				0E7B91E51971C8D800174EB7 /* HomeViewController.m */,
 			);
-			path = PillOMat;
+			name = MedsGenie;
+			path = MedsGenie;
 			sourceTree = "<group>";
 		};
 		0E7B919019713F2B00174EB7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0E7B919119713F2B00174EB7 /* PillOMat-Info.plist */,
+				0E7B919119713F2B00174EB7 /* medsgenie-Info.plist */,
 				0E7B919219713F2B00174EB7 /* InfoPlist.strings */,
 				0E7B919519713F2B00174EB7 /* main.m */,
-				0E7B919719713F2B00174EB7 /* PillOMat-Prefix.pch */,
+				0E7B919719713F2B00174EB7 /* medsgenie-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0E7B91AE19713F2C00174EB7 /* PillOMatTests */ = {
+		0E7B91AE19713F2C00174EB7 /* MedsGenieTests */ = {
 			isa = PBXGroup;
 			children = (
 				0E7B91B419713F2C00174EB7 /* PillOMatTests.m */,
 				0E7B91AF19713F2C00174EB7 /* Supporting Files */,
 			);
+			name = MedsGenieTests;
 			path = PillOMatTests;
 			sourceTree = "<group>";
 		};
 		0E7B91AF19713F2C00174EB7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0E7B91B019713F2C00174EB7 /* PillOMatTests-Info.plist */,
+				0E7B91B019713F2C00174EB7 /* medsgenieTests-Info.plist */,
 				0E7B91B119713F2C00174EB7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -247,9 +251,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0E7B918519713F2B00174EB7 /* PillOMat */ = {
+		0E7B918519713F2B00174EB7 /* medsgenie */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0E7B91B819713F2C00174EB7 /* Build configuration list for PBXNativeTarget "PillOMat" */;
+			buildConfigurationList = 0E7B91B819713F2C00174EB7 /* Build configuration list for PBXNativeTarget "medsgenie" */;
 			buildPhases = (
 				F543E58441C54B56B07F6A46 /* Check Pods Manifest.lock */,
 				0E7B918219713F2B00174EB7 /* Sources */,
@@ -261,14 +265,14 @@
 			);
 			dependencies = (
 			);
-			name = PillOMat;
-			productName = PillOMat;
-			productReference = 0E7B918619713F2B00174EB7 /* PillOMat.app */;
+			name = medsgenie;
+			productName = MedsGenie;
+			productReference = 0E7B918619713F2B00174EB7 /* medsgenie.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0E7B91A619713F2C00174EB7 /* PillOMatTests */ = {
+		0E7B91A619713F2C00174EB7 /* medsgenieTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0E7B91BB19713F2C00174EB7 /* Build configuration list for PBXNativeTarget "PillOMatTests" */;
+			buildConfigurationList = 0E7B91BB19713F2C00174EB7 /* Build configuration list for PBXNativeTarget "medsgenieTests" */;
 			buildPhases = (
 				0E7B91A319713F2C00174EB7 /* Sources */,
 				0E7B91A419713F2C00174EB7 /* Frameworks */,
@@ -279,9 +283,9 @@
 			dependencies = (
 				0E7B91AD19713F2C00174EB7 /* PBXTargetDependency */,
 			);
-			name = PillOMatTests;
-			productName = PillOMatTests;
-			productReference = 0E7B91A719713F2C00174EB7 /* PillOMatTests.xctest */;
+			name = medsgenieTests;
+			productName = MedsGenieTests;
+			productReference = 0E7B91A719713F2C00174EB7 /* medsgenieTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -299,7 +303,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0E7B918119713F2B00174EB7 /* Build configuration list for PBXProject "PillOMat" */;
+			buildConfigurationList = 0E7B918119713F2B00174EB7 /* Build configuration list for PBXProject "medsgenie" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -312,8 +316,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0E7B918519713F2B00174EB7 /* PillOMat */,
-				0E7B91A619713F2C00174EB7 /* PillOMatTests */,
+				0E7B918519713F2B00174EB7 /* medsgenie */,
+				0E7B91A619713F2C00174EB7 /* medsgenieTests */,
 			);
 		};
 /* End PBXProject section */
@@ -410,7 +414,7 @@
 /* Begin PBXTargetDependency section */
 		0E7B91AD19713F2C00174EB7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0E7B918519713F2B00174EB7 /* PillOMat */;
+			target = 0E7B918519713F2B00174EB7 /* medsgenie */;
 			targetProxy = 0E7B91AC19713F2C00174EB7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -520,9 +524,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PillOMat/PillOMat-Prefix.pch";
-				INFOPLIST_FILE = "PillOMat/PillOMat-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "MedsGenie/medsgenie-Prefix.pch";
+				INFOPLIST_FILE = "MedsGenie/medsgenie-Info.plist";
+				PRODUCT_NAME = medsgenie;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -534,9 +538,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PillOMat/PillOMat-Prefix.pch";
-				INFOPLIST_FILE = "PillOMat/PillOMat-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "MedsGenie/medsgenie-Prefix.pch";
+				INFOPLIST_FILE = "MedsGenie/medsgenie-Info.plist";
+				PRODUCT_NAME = medsgenie;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -556,8 +560,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "PillOMatTests/PillOMatTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "PillOMatTests/medsgenieTests-Info.plist";
+				PRODUCT_NAME = medsgenieTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -574,8 +578,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PillOMat/PillOMat-Prefix.pch";
-				INFOPLIST_FILE = "PillOMatTests/PillOMatTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "PillOMatTests/medsgenieTests-Info.plist";
+				PRODUCT_NAME = medsgenieTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -584,7 +588,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0E7B918119713F2B00174EB7 /* Build configuration list for PBXProject "PillOMat" */ = {
+		0E7B918119713F2B00174EB7 /* Build configuration list for PBXProject "medsgenie" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0E7B91B619713F2C00174EB7 /* Debug */,
@@ -593,7 +597,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0E7B91B819713F2C00174EB7 /* Build configuration list for PBXNativeTarget "PillOMat" */ = {
+		0E7B91B819713F2C00174EB7 /* Build configuration list for PBXNativeTarget "medsgenie" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0E7B91B919713F2C00174EB7 /* Debug */,
@@ -602,7 +606,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0E7B91BB19713F2C00174EB7 /* Build configuration list for PBXNativeTarget "PillOMatTests" */ = {
+		0E7B91BB19713F2C00174EB7 /* Build configuration list for PBXNativeTarget "medsgenieTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0E7B91BC19713F2C00174EB7 /* Debug */,

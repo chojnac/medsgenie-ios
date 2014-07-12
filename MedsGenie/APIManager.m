@@ -7,8 +7,7 @@
 //
 
 #import "APIManager.h"
-#define API_SECRET @"bcd7a2485055abcbb92422b9f5c9f90764284913"
-#define SPARK_CORE_ID @"51ff6e065067545727290187"
+
 #import <AFNetworking/AFNetworking.h>
 @implementation APIManager
 
@@ -29,8 +28,7 @@
     }
     NSDictionary *params = @ {@"access_token" :API_SECRET, @"args" :str };
     NSLog(@"pills from trays: %@",str);
-    success();
-    return;
+    
     NSError *err = nil;
     NSMutableURLRequest *request = [[AFHTTPRequestSerializer serializer] requestWithMethod:@"POST"
                                                                                  URLString:[url absoluteString]

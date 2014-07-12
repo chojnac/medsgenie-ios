@@ -31,3 +31,5 @@ Pods
 # AppCode specific files
 .idea/
 *.iml
+
+MedsGenie/config.h
