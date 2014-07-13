@@ -85,9 +85,10 @@
     if(indexPath.section==0) {
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell1" forIndexPath:indexPath];
         UILabel *label = (UILabel *)[cell viewWithTag:10];
+        UILabel *label2 = (UILabel *)[cell viewWithTag:90];
         ScheduleItem *item = [[ScheduleDatasoure sharedDatasource] itemAtIndex:indexPath.row];
         label.text = item.name;
-//        cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ , %i pills",item.when, [item numerOfPills]];
+        label2.text = [NSString stringWithFormat:@"%@ , %i pills",item.when, [item numerOfPills]];
         return cell;
     }
 
