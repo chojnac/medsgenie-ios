@@ -12,6 +12,7 @@
 #import "UIView+TableViewCell.h"
 #import "APIManager.h"
 #import <SVProgressHUD.h>
+#import "RefillViewController.h"
 
 @interface HomeViewController ()
 
@@ -62,9 +63,9 @@
     [api giveMeThePills:pillsForTrays success:^{
         [SVProgressHUD dismiss];
         button.enabled = YES;
-        [[[UIAlertView alloc] initWithTitle:nil message:@"Take your pills!" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
         [[StorageDatasource sharedDatasource] updateStockFromDoses:item.doses];
         [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:UITableViewRowAnimationAutomatic];
+        [self checkEmptyStock];
     } failuer:^(NSString *errorMessage, NSError *error) {
         [SVProgressHUD dismiss];
         button.enabled = YES;
@@ -98,12 +99,27 @@
         cell.textLabel.text = [NSString stringWithFormat:@"%@ : %i",item.tray.name, item.pillsCount];
     }
     
+    UILabel *refillLabel = (UILabel *)[cell viewWithTag:100];
+    if(!refillLabel) {
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 73, 21)];
+        label.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:15];
+        label.tag = 100;
+        label.text = @"Buy refill";
+        label.center =  CGPointMake(CGRectGetMidX(cell.bounds), CGRectGetMidY(cell.bounds));
+        [cell.contentView addSubview:label];
+        refillLabel = label;
+    }
+    
     if(item.pillsCount<=1) {
+        refillLabel.hidden = YES;
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         cell.detailTextLabel.text = @"";
         cell.backgroundColor = [UIColor colorWithRed:1.000 green:0.502 blue:0.000 alpha:1.000];
         cell.textLabel.textColor = [UIColor whiteColor];
         cell.detailTextLabel.textColor = [UIColor whiteColor];
-    }else {        
+    }else {
+        refillLabel.hidden = YES;
+        cell.accessoryType = UITableViewCellAccessoryNone;
         cell.backgroundColor = [UIColor whiteColor];
         cell.textLabel.textColor = [UIColor blackColor];
         cell.detailTextLabel.textColor = [UIColor blackColor];
@@ -122,4 +138,49 @@
     else return @"Stock";
 }
 
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    return nil;
+    if(indexPath.section!=1) return nil;
+   StorageItem *item = [[StorageDatasource sharedDatasource] itemAtIndex:indexPath.row];
+    if(item.pillsCount>1) return nil;
+    return indexPath;
+}
+
+-(void)checkEmptyStock {
+    NSInteger j = [[StorageDatasource sharedDatasource] numerOfTrays];
+    for(int i=0;i<j;i++ ) {
+        StorageItem *item  = [[StorageDatasource sharedDatasource] itemAtIndex:i];
+        if(item.pillsCount<=1) {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Your pills are running low. Would you like to buy a refill?" delegate:self
+        cancelButtonTitle:@"No" otherButtonTitles:@"Buy", nil];
+            alert.tag = 100;
+            [alert show];
+            return;
+        }
+    }
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if(alertView.tag!=100) return;
+    [SVProgressHUD showWithStatus:@"Your order is processing..."];
+    [self performSelector:@selector(closeBuying) withObject:nil afterDelay:4];
+}
+
+-(void)closeBuying {
+    [SVProgressHUD dismiss];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Your pills are on the way!" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+    [alert show];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if([sender isKindOfClass:[UITableViewCell class]]) {
+        UITableViewCell *cell = sender;
+        if(![cell.reuseIdentifier isEqualToString:@"Cell2"]) return;
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+        StorageItem *item = [[StorageDatasource sharedDatasource] itemAtIndex:indexPath.row];
+        UINavigationController *nc = segue.destinationViewController;
+        RefillViewController *vc = (RefillViewController *)nc.topViewController;
+        vc.item = item;
+    }
+}
 @end

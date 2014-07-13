@@ -39,6 +39,7 @@
         self.items = [NSMutableArray array];
 
         {
+            // 0, 3
             ScheduleItem *item = [ScheduleItem new];
             item.name = @"Morning pills";
             item.when = @"Everyday at 9:00AM";
@@ -54,27 +55,42 @@
         }
         
         {
+            // 0, 1, 2
             ScheduleItem *item = [ScheduleItem new];
             item.name = @"Midday pills";
             item.when = @"Everyday at 12:00PM";
             ScheduleItemDose *dose1 = [ScheduleItemDose new];
-            dose1.tray = [[Tray avaliableTrays] objectAtIndex:1];
+            dose1.tray = [[Tray avaliableTrays] objectAtIndex:0];
             dose1.pillsCount = 1;
-            item.doses = @[dose1];
+            
+            ScheduleItemDose *dose2 = [ScheduleItemDose new];
+            dose2.tray = [[Tray avaliableTrays] objectAtIndex:1];
+            dose2.pillsCount = 1;
+            
+            ScheduleItemDose *dose3 = [ScheduleItemDose new];
+            dose3.tray = [[Tray avaliableTrays] objectAtIndex:2];
+            dose3.pillsCount = 1;
+            item.doses = @[dose1, dose2, dose3];
             [self.items addObject:item];
         }
         
         {
+            // 0, 0, 1
             ScheduleItem *item = [ScheduleItem new];
-            item.name = @"Sleep pills";
+            item.name = @"Afternoon pills";
             item.when = @"Everyday at 8:00PM";
             ScheduleItemDose *dose1 = [ScheduleItemDose new];
-            dose1.tray = [[Tray avaliableTrays] objectAtIndex:2];
+            dose1.tray = [[Tray avaliableTrays] objectAtIndex:0];
             dose1.pillsCount = 1;
             ScheduleItemDose *dose2 = [ScheduleItemDose new];
-            dose2.tray = [[Tray avaliableTrays] objectAtIndex:3];
+            dose2.tray = [[Tray avaliableTrays] objectAtIndex:0];
             dose2.pillsCount = 1;
-            item.doses = @[dose1, dose2];
+            
+            ScheduleItemDose *dose3 = [ScheduleItemDose new];
+            dose3.tray = [[Tray avaliableTrays] objectAtIndex:1];
+            dose3.pillsCount = 1;
+            
+            item.doses = @[dose1, dose2, dose3];
             [self.items addObject:item];
         }
         

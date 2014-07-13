@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E0A470B19725F1F00F46545 /* RefillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0A470A19725F1F00F46545 /* RefillViewController.m */; };
 		0E7B918A19713F2B00174EB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E7B918919713F2B00174EB7 /* Foundation.framework */; };
 		0E7B918C19713F2B00174EB7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E7B918B19713F2B00174EB7 /* CoreGraphics.framework */; };
 		0E7B918E19713F2B00174EB7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E7B918D19713F2B00174EB7 /* UIKit.framework */; };
@@ -49,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E0A470919725F1F00F46545 /* RefillViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefillViewController.h; sourceTree = "<group>"; };
+		0E0A470A19725F1F00F46545 /* RefillViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefillViewController.m; sourceTree = "<group>"; };
 		0E7B918619713F2B00174EB7 /* medsgenie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = medsgenie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E7B918919713F2B00174EB7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0E7B918B19713F2B00174EB7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -189,6 +192,8 @@
 				0E7B91E21971B37900174EB7 /* WelcomeViewController.m */,
 				0E7B91E41971C8D800174EB7 /* HomeViewController.h */,
 				0E7B91E51971C8D800174EB7 /* HomeViewController.m */,
+				0E0A470919725F1F00F46545 /* RefillViewController.h */,
+				0E0A470A19725F1F00F46545 /* RefillViewController.m */,
 			);
 			path = MedsGenie;
 			sourceTree = "<group>";
@@ -394,6 +399,7 @@
 				0E7B91E91971CB9B00174EB7 /* UIView+TableViewCell.m in Sources */,
 				0E7B91D6197177C500174EB7 /* StorageItemViewController.m in Sources */,
 				0E7B91C01971648300174EB7 /* ScheduleDatasoure.m in Sources */,
+				0E0A470B19725F1F00F46545 /* RefillViewController.m in Sources */,
 				0E7B91CC1971677A00174EB7 /* StorageDatasource.m in Sources */,
 				0E7B91D319716A8D00174EB7 /* StorageViewController.m in Sources */,
 				0E7B91C9197164F200174EB7 /* Tray.m in Sources */,

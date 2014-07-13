@@ -35,7 +35,8 @@
             StorageItem *item = [[StorageItem alloc] init];
             item.tray = tray;
             item.name = [pillNames objectAtIndex:i];
-            item.pillsCount = 5;
+            if(i==0) item.pillsCount = 5;
+            else item.pillsCount = 5;
             [self.items addObject:item];
             i++;
         }
