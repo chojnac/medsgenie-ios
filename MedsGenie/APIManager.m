@@ -29,6 +29,13 @@
     NSDictionary *params = @ {@"access_token" :API_SECRET, @"args" :str };
     NSLog(@"pills from trays: %@",str);
     
+#ifdef NO_CLOUD
+#if NO_CLOUD 
+    success();
+    return;
+#endif
+#endif
+    
     NSError *err = nil;
     NSMutableURLRequest *request = [[AFHTTPRequestSerializer serializer] requestWithMethod:@"POST"
                                                                                  URLString:[url absoluteString]
