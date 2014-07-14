@@ -39,7 +39,7 @@
         self.items = [NSMutableArray array];
 
         {
-            // 0, 3
+            // 0, 0, 3
             ScheduleItem *item = [ScheduleItem new];
             item.name = @"Morning pills";
             item.when = @"Everyday at 9:00AM";
@@ -47,9 +47,13 @@
             dose1.tray = [[Tray avaliableTrays] objectAtIndex:0];
             dose1.pillsCount = 1;
             ScheduleItemDose *dose2 = [ScheduleItemDose new];
-            dose2.tray = [[Tray avaliableTrays] objectAtIndex:3];
+            dose2.tray = [[Tray avaliableTrays] objectAtIndex:0];
             dose2.pillsCount = 1;
-            item.doses = @[dose1, dose2];
+            ScheduleItemDose *dose3 = [ScheduleItemDose new];
+            dose3.tray = [[Tray avaliableTrays] objectAtIndex:3];
+            dose3.pillsCount = 1;
+
+            item.doses = @[dose1, dose2, dose3];
             
             [self.items addObject:item];
         }
@@ -75,7 +79,7 @@
         }
         
         {
-            // 0, 0, 1
+            // 0, 0, 2
             ScheduleItem *item = [ScheduleItem new];
             item.name = @"Afternoon pills";
             item.when = @"Everyday at 8:00PM";
@@ -87,7 +91,7 @@
             dose2.pillsCount = 1;
             
             ScheduleItemDose *dose3 = [ScheduleItemDose new];
-            dose3.tray = [[Tray avaliableTrays] objectAtIndex:1];
+            dose3.tray = [[Tray avaliableTrays] objectAtIndex:2];
             dose3.pillsCount = 1;
             
             item.doses = @[dose1, dose2, dose3];

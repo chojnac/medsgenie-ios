@@ -28,6 +28,7 @@
 
 -(void)viewWillAppear:(BOOL)animated {
     [self.navigationController setNavigationBarHidden:YES animated:YES];
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -163,6 +164,7 @@
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     if(alertView.tag!=100) return;
+    if(buttonIndex==alertView.cancelButtonIndex) return;
     [SVProgressHUD showWithStatus:@"Your order is processing..."];
     [self performSelector:@selector(closeBuying) withObject:nil afterDelay:4];
 }

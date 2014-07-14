@@ -113,7 +113,7 @@
                             <outlet property="delegate" destination="16L-AU-mH2" id="Wpa-44-UTA"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Home" id="kx3-P2-5D7"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="94-pill" id="kx3-P2-5D7"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tib-tk-eSJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -537,7 +537,7 @@
         <scene sceneID="PNU-US-zTm">
             <objects>
                 <navigationController definesPresentationContext="YES" id="2Bz-4U-fkN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Tray" id="s0i-rY-gTb"/>
+                    <tabBarItem key="tabBarItem" title="Tray" image="33-cabinet" id="s0i-rY-gTb"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FAz-Jz-8Wu">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -578,7 +578,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tTT-lb-prt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1337" y="-293"/>
+            <point key="canvasLocation" x="-1405" y="-584"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="grO-L1-PFl">
@@ -594,7 +594,6 @@
                         <segue destination="16L-AU-mH2" kind="relationship" relationship="viewControllers" id="5RF-wE-coM"/>
                         <segue destination="PR5-z0-oAx" kind="relationship" relationship="viewControllers" id="iFl-Gm-Gko"/>
                         <segue destination="2Bz-4U-fkN" kind="relationship" relationship="viewControllers" id="Zbx-AX-P08"/>
-                        <segue destination="rXM-It-3fQ" kind="relationship" relationship="viewControllers" id="qqF-SW-lu1"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yQc-hf-Jma" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -605,7 +604,7 @@
         <scene sceneID="IWC-cR-7cx">
             <objects>
                 <navigationController definesPresentationContext="YES" id="PR5-z0-oAx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Schedule" id="ttb-iE-aan"/>
+                    <tabBarItem key="tabBarItem" title="Schedule" image="11-clock" id="ttb-iE-aan"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="F6v-IQ-tbW">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -618,6 +617,11 @@
             <point key="canvasLocation" x="-693" y="-188"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="11-clock" width="25" height="25"/>
+        <image name="33-cabinet" width="20" height="26"/>
+        <image name="94-pill" width="30" height="12"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
